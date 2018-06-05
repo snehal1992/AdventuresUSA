@@ -1,0 +1,15 @@
+<a
+  href="#"
+  class="list-group-item clearfix"
+  (click) = "onEmitEvent()">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ adv.name }}</h4>
+    <p class="list-group-item-text">{{ adv.desc }}</p>
+  </div>
+  <span class="pull-right">
+        <img
+          [src]="adv.imagePath"
+          alt="{{ adv.name }}"
+          class="img-responsive" style="max-height: 50px;">
+  </span>
+</a>

@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-adventure-list (adventureSelected) = "selectedAdventure = $event"></app-adventure-list>
+  </div>
+  <div class="col-md-7">
+    <app-adventure-details
+      *ngIf="selectedAdventure" else infoText
+      [advDetails] = "selectedAdventure"
+    ></app-adventure-details>
+    <ng-template #infoText>
+      <p>Please select a template</p>
+    </ng-template>
+  </div>
+</div>

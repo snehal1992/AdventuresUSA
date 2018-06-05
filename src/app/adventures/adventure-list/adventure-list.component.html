@@ -1,0 +1,10 @@
+  <div class="row">
+    <div class="col-xs-12">
+      <app-adventure-item
+          *ngFor="let adv1 of adventure"
+          [adv]="adv1"
+          (adventureClick) = "onSelectAdventure(adv1)"
+      ></app-adventure-item>
+    </div>
+  </div>
+
